@@ -16,8 +16,6 @@ do
         Console.WriteLine("Invalid input");
 } while (true);
 
-
-
 class MyEventArgs(int balance) : EventArgs
 {
     public int Balance { get; set; } = balance;

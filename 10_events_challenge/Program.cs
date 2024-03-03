@@ -26,8 +26,8 @@ class PiggyBank
 {
     public int PiggyCapacity { get; } = 500;
     public int Balance { get; private set; } = 0;
-    public event EventHandler<MyEventArgs> OnBalanceChanged;
-    public event EventHandler OnPiggyFull;
+    public event EventHandler<MyEventArgs>? OnBalanceChanged;
+    public event EventHandler? OnPiggyFull;
 
     public void ChangeBalance(int amount)
     {
